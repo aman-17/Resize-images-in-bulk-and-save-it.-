@@ -1,0 +1,1 @@
+# Resize-images-in-bulk-and-save-it.-
