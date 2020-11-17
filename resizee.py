@@ -1,32 +1,13 @@
-'''from PIL import Image
-import glob
-import os
 
-# new folder path (may need to alter for Windows OS)
-# change path to your path
-path = '/home/aman17/resize' #the path where to save resized images
-# create new folder
-if not os.path.exists(path):
-    os.makedirs(path)
-
-# loop over existing images and resize
-# change path to your path
-for filename in glob.glob('/home/aman17/Object-Detector/t-shirts/IMG-20201102-WA0053.jpg'): #path of raw images
-    img = Image.open(filename).resize((512,512))
-    # save resized images to new folder with existing filename
-    img.save('{}{}{}'.format(path,'/',os.path.split(filename)[1]))
-
-print('yes')
-'''
 from PIL import Image
 import glob
 import os
 
 # new folder path (may need to alter for Windows OS)
 # change path to your path
-ORI_PATH = '/home/aman17/Object-Detector/t-shirts'
+ORI_PATH = 'PATH TO ORIGINAL IMAGES'
 NEW_SIZE = 512
-PATH = '/home/aman17/Object-Detector/resize' #the path where to save resized images
+PATH = 'ENTER PATH TO SAVE AFTER RESIZING' #the path where to save resized images
 
 # create new folder
 if not os.path.exists(PATH):
